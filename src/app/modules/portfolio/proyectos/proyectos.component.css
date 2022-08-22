@@ -1,0 +1,43 @@
+
+/* TODO: Proyectos */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 50px;
+    margin-bottom: 30px;
+    align-content: center;
+    
+  }
+  
+  .card1 h5{
+    color: #00963c;
+    margin-top: 15px;
+  }
+  
+  .card1 img{
+    height: 230px;
+  }
+  
+  .card1{
+    border-radius: 15px;
+    color: #fff;
+  }
+  .card1:hover{
+    transform: scale(.9);
+  }
+  
+  .card1:hover::after{
+    height: 300px;
+  }
+  
+  .card1:hover .con-text p{
+    margin-bottom: opx;
+    opacity: 1;
+  }
+  
+  .card1:hover img{
+    transform: scale(1);
+  }
+  
+  
+  /* TODO: Fin de Proyectos */

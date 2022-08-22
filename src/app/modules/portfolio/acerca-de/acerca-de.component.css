@@ -1,0 +1,23 @@
+/* TODO: Acerca de */
+.img-fluid2 {
+    width: 500px;
+    height: 330px;
+    border-radius: 70%;
+    
+  }
+  
+   .custom-section {
+    padding-top: 50px;
+  } 
+  
+  .cb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } 
+  /* TODO: Fin de Acerca de */
+
+
+
+  
