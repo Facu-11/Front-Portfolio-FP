@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  pos:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  found(e:any): void {
+    let popUser:number=window.pageYOffset;
+    console.log(window.pageYOffset);
+    
+    if(popUser>300){
+      this.pos=true;
+    }
+    else if(popUser == 0){
+      this.pos=false
+    }
   }
 
 }

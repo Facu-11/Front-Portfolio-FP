@@ -1,5 +1,5 @@
 <!-- TODO: Navbar -->
-<nav id="nav nav1" class="navbar fixed-top navbar-expand-lg navbar-white p-md-3 margin">
+<nav id="nav" [ngClass]="{'navbar fixed-top navbar-expand-lg navbar-white p-md-3 margin' :true,'nav-trans':pos}">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img class="img-fluid" src="../../../../assets/img/argentiaProgramaLogo.png" alt=""/>
@@ -23,15 +23,21 @@
             <a class="nav-link text-white" href="#">Inicio</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link text-white" href="#">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Proyectos</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-white" href="#">Redes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Login</a>
           </li>
           <li class="nav-item">
-            <!-- <a class="nav-link text-white" href="#"
-              ><ion-icon name="pencil-outline"></ion-icon
-            ></a> -->
+             <a class="nav-link text-white" href="#">
+              <i class="bi bi-pencil"></i>
+            </a> 
           </li>
         </ul>
       </div>

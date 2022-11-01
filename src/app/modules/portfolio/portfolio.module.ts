@@ -11,25 +11,28 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { LogoAPComponent } from './logo-ap/logo-ap.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     
-            
             BannerComponent,
             AcercaDeComponent,
+            LogoAPComponent,
             ExperienciaComponent,
             EducacionComponent,
             SkillsComponent,
             FooterComponent,
             HeaderComponent,
             HomeComponent,
-            ProyectosComponent
+            ProyectosComponent,
   ],
   imports: [
     CommonModule,
-    PortfolioRoutingModule
+    PortfolioRoutingModule,
+    FormsModule
   ]
 })
 export class PortfolioModule { }

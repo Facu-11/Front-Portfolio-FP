@@ -3,15 +3,14 @@
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-    gap: 50px;
-    margin-bottom: 30px;
+    gap: 10px;
     align-content: center;
     
   }
   
   .card1 h5{
-    color: #00963c;
-    margin-top: 15px;
+    color: #0077b6;
+    align-items: center;
   }
   
   .card1 img{
@@ -21,6 +20,7 @@
   .card1{
     border-radius: 15px;
     color: #fff;
+    margin-bottom: 100px;
   }
   .card1:hover{
     transform: scale(.9);
@@ -39,5 +39,10 @@
     transform: scale(1);
   }
   
-  
+
+/* .obj{
+  object-fit: cover;
+}
+   */
+   
   /* TODO: Fin de Proyectos */

@@ -1,12 +1,17 @@
 
       <!-- TODO: Estudios -->
-      <h3>Estudios</h3>
+      <h3>Educacion</h3>
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        Agregar Educacion
+    </button>
+
       <br />
-      <div class="card-group margin">
-        <div class="card">
+
+      <div class="card-group margin  ">
+        <div class="card p-3    border-star ">
           <img src="../../../../assets/img/UNSAM.jpg" class="card-img-top img-st" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
+          <div class="card-body ">
+            <h5 class="card-title ">
               UNSAM <br />
               (2021-Actualidad)
             </h5>
@@ -16,7 +21,7 @@
             <p class="card-text"><small class="text-muted"></small></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card ">
           <img
             src="../../../../assets/img/argentiaProgramaLogo.png"
             class="card-img-top img-st"
@@ -39,7 +44,7 @@
             <p class="card-text"><small class="text-muted "></small></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card p-3 bg-opacity-10">
           <img src="../../../../assets/img/chilavert.jpg" class="card-img-top img-st" alt="..." />
           <div class="card-body">
             <h5 class="card-title">
