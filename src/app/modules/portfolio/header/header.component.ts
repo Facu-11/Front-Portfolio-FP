@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,29 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  isLogged = false;
 
   pos:boolean=false;
+  tokenService: any;
 
-  constructor() { }
+  constructor(private router: Router ) { }
+
+  // logingo (){
+  //   this.router.navigate(['/login']);
+  // }
+
+
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
+
+  login(){
+    this.router.navigate(['/login'])
+  }
+
+
+  
 
   ngOnInit(): void {
   }

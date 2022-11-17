@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './modules/login/pages/login.component';
 import { EditeducacionComponent } from './modules/portfolio/educacion/editeducacion.component';
 import { NeweducacionComponent } from './modules/portfolio/educacion/neweducacion.component';
 import { HomeComponent } from './modules/portfolio/home/home.component';
@@ -14,16 +15,17 @@ const routes: Routes = [
       component: HomeComponent,
       loadChildren:() => import('./modules/portfolio/portfolio.module').then(m => m.PortfolioModule)
     },
-    {
-      path:'login',
-      loadChildren:() => import ('./modules/login/login.module').then(m=> m.LoginModule)
-    },
+    // {
+    //   path:'login',
+    //   loadChildren:() => import ('./modules/login/login.module').then(m=> m.LoginModule)
+    // },
+    { path : 'login', component : LoginComponent},
     { path : 'nuevopro', component: NewproyectosComponent},
     { path : 'editpro', component : EditProyectosComponent },
     { path: 'nuevaedu', component: NeweducacionComponent},
     { path: 'editedu/:id', component: EditeducacionComponent},
     { path: 'newskill', component: NewskillsComponent},
-    { path: 'editskill/:id', component: EditskillsComponent}
+    { path: 'editskill/:id', component: EditskillsComponent},
 ];
 
 @NgModule({

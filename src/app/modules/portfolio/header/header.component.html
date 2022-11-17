@@ -22,9 +22,11 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Inicio</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Experiencia</a>
+            <a class="nav-link text-white" href="#">skills</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Proyectos</a>
           </li>
@@ -32,13 +34,16 @@
             <a class="nav-link text-white" href="#">Redes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Login</a>
+            <button type="button" class="btn btn-outline-light" href="/login" (click)="login()" *ngIf="!isLogged">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">logout</button>
+            <!-- <button class="btn btn-outline-light btn-lg px-5" type="submit"  (click) = "logingo()">Login</button> -->
+            <!-- <a class="nav-link text-white" href="#" (click) = "logingo()">Login</a> -->
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
              <a class="nav-link text-white" href="#">
               <i class="bi bi-pencil"></i>
             </a> 
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
